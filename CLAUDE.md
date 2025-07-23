@@ -114,7 +114,49 @@ All wedding information is configured in `src/data.json`:
 2. Create `.env` file: `VITE_GOOGLE_MAPS_API_KEY=your_api_key_here`
 3. Without API key: Shows placeholder with "Map will be displayed here"
 
-## Deployment
-The project is ready for deployment on platforms like Vercel, Netlify, or any static hosting service. The application works fully without external API keys, showing appropriate fallbacks.
+### ✅ **Docker & Reverse Proxy Setup**
+- **Dockerized application** with Docker Compose configuration
+- **Caddy reverse proxy** for production deployment with HTTPS support
+- **Environment variable configuration** using `MY_URL` for custom domain setup
+- **Persistent volumes** for Caddy data and configuration
+- **Network isolation** with dedicated Docker network
+- **Port mapping**: Application runs on port 3000, Caddy handles 80/443
 
-This is a well-structured, feature-rich wedding invitation template that demonstrates modern React development practices and provides a complete digital wedding solution with international support and modern integrations.
+## Docker Deployment
+
+### **Using Docker Compose**
+The project includes a complete Docker setup for production deployment:
+
+```bash
+# Build and run with Docker Compose
+docker-compose up -d
+
+# Stop the services
+docker-compose down
+```
+
+### **Environment Configuration**
+Create a `.env` file with your domain:
+```env
+MY_URL=yourdomain.com
+VITE_GOOGLE_MAPS_API_KEY=your_api_key_here  # Optional
+```
+
+### **Docker Services**
+- **our-wedding**: Main React application container
+- **caddy**: Reverse proxy with automatic HTTPS via Let's Encrypt
+- **Networks**: Isolated bridge network for container communication
+- **Volumes**: Persistent storage for SSL certificates and Caddy config
+
+## Deployment Options
+
+### **Docker Deployment (Recommended)**
+The project is fully containerized and ready for deployment with Docker Compose. The setup includes:
+- Automatic HTTPS with Let's Encrypt via Caddy
+- Custom domain configuration via environment variables
+- Production-ready reverse proxy setup
+
+### **Static Hosting**
+Also compatible with platforms like Vercel, Netlify, or any static hosting service. The application works fully without external API keys, showing appropriate fallbacks.
+
+This is a well-structured, feature-rich wedding invitation template that demonstrates modern React development practices and provides a complete digital wedding solution with international support, modern integrations, and production-ready containerization.
