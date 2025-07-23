@@ -1,0 +1,12 @@
+services:
+  wedding-app:
+    build: .
+    ports:
+      - "3000:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true

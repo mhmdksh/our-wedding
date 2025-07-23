@@ -1,0 +1,105 @@
+{
+  "greeting": {
+    "title": "Mohamad & Aya 💍\nGetting Married!",
+    "message": "We are getting married.\n\nWe who have been warm with the right temperature for each other.\nWe invite you to share this exciting moment\nas we take our first step as a married couple.",
+    "host": {
+      "groom": {
+        "name": "Mohamad",
+        "relation": "son",
+        "parents": [
+          {
+            "relation": "father",
+            "name": "Ghassan Shehab"
+          },
+          {
+            "relation": "mother",
+            "name": "Mona Al Kharrat"
+          }
+        ]
+      },
+      "bride": {
+        "name": "Aya",
+        "relation": "daughter",
+        "parents": [
+          {
+            "relation": "father",
+            "name": "Amer Arab"
+          },
+          {
+            "relation": "mother",
+            "name": "Basima Al Halabi"
+          }
+        ]
+      }
+    },
+    "eventDetail": "October 18, 2025 (Saturday) 6:00 PM\nDar el Kamar Restaurant, Tripoli, Lebanon"
+  },
+  "hostInfo": [
+    {
+      "host": "Groom's Side",
+      "accountInfo": [
+        {
+          "name": "Mohamad Khodor Shehab",
+          "relation": "groom",
+          "bank": "Emirates NBD Bank",
+          "account": "AE390260000215451420101",
+          "kakaopayAccount": "",
+          "tossAccount": ""
+        },
+        {
+          "name": "Mohamad Khodor Shehab",
+          "relation": "groom",
+          "bank": "WISH Money",
+          "account": "20915943-03"
+        },
+        {
+          "name": "Mohamad Khodor Shehab",
+          "relation": "groom",
+          "bank": "Binance ID",
+          "account": "35766990"
+        },
+        {
+          "name": "Mohamad Khodor Shehab",
+          "relation": "groom",
+          "bank": "ERC-20",
+          "account": "0x7c996Fc3a62B4B0fb1675E251c3d865f146f062E"
+        },
+        {
+          "name": "Mohamad Khodor Shehab",
+          "relation": "groom",
+          "bank": "TRC-20",
+          "account": "TMua4bHmWriXGugPdqnRhdPNP6hXH13a9x"
+        }
+      ]
+    }
+  ],
+  "mapInfo": {
+    "address1": "Dar Al Amar Restaurant, Tripoli, Lebanon",
+    "lat": 34.42801583855323,
+    "lon": 35.82802279313072,
+    "zoom": 17
+  },
+  "locationInfo": [
+    {
+      "title": "📍 Google Maps Link",
+      "desc": "👉🏻 https://maps.app.goo.gl/pb1XBB9RNKWFKYVb7"
+    }
+  ],
+  "emojis": [
+    "❤️",
+    "💛",
+    "💌",
+    "🥹",
+    "🥳",
+    "👰🏻‍",
+    "🤵🏻‍️",
+    "🤍",
+    "✨",
+    "💍",
+    "💒",
+    "💕",
+    "😍",
+    "🔔",
+    "💘"
+  ]
+}
