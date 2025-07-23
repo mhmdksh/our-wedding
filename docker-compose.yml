@@ -1,5 +1,6 @@
 services:
-  wedding-app:
+  our-wedding:
+    container_name: our-wedding
     build: .
     ports:
       - "3000:5173"
@@ -8,5 +9,29 @@ services:
       - /app/node_modules
     env_file:
       - .env
+    networks:
+      - our-wedding-network
     stdin_open: true
     tty: true
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: caddy
+    restart: always
+    networks:
+      - our-wedding-network
+    ports:
+      - 80:80
+      - 443:443
+    env_file:
+      - .env
+    environment:
+      - BACKEND_URL=${BACKEND_URL:-}
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+      - ./Caddyfile:/etc/caddy/Caddyfile
+
+networks:
+  our-wedding-network:
+    driver: bridge
