@@ -24,9 +24,8 @@ const MainImg = styled.img`
 `;
 
 const MainTitle = styled.p`
-  font-family: 'Cormorant SC', HSSanTokki20-Regular, serif;
+  font-family: HSSanTokki20-Regular, serif;
   font-size: clamp(1.5rem, 5vw, 2rem);
-  font-weight: 700;
   color: #2F2120;
   line-height: 120%;
   white-space: pre-line;

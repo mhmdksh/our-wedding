@@ -52,14 +52,26 @@ const HostContainer = styled.div`
 `;
 
 const HostDetails = styled.div`
-  padding: 0 55px;
+  padding: 0 20px;
   justify-content: center;
-  white-space: nowrap;
   display: flex;
   gap: 6px;
   text-align: center;
   align-items: center;
   font-weight: 700;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  
+  @media screen and (min-width: 500px) {
+    padding: 0 55px;
+    white-space: nowrap;
+  }
+  
+  @media screen and (max-width: 400px) {
+    padding: 0 10px;
+    gap: 4px;
+  }
 `;
 
 const RelationText = styled.div`
