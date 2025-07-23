@@ -17,22 +17,30 @@ export default Main;
 
 const MainImg = styled.img`
   border-radius: 200px 200px 0 0;
-  width: 90%;
-  max-width: 450px;
+  width: min(90%, 400px);
+  max-width: 400px;
   padding-top: 20px;
+  height: auto;
 `;
 
 const MainTitle = styled.p`
-  font-family: HSSanTokki20-Regular, serif;
-  font-size: 2rem;
+  font-family: 'Cormorant SC', HSSanTokki20-Regular, serif;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 700;
   color: #2F2120;
   line-height: 120%;
   white-space: pre-line;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 0 10px;
 `;
 
 const SubTitle = styled.p`
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 3.5vw, 1.1rem);
   color: #2F2120;
   line-height: 140%;
   white-space: pre-line;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 0 15px;
 `;

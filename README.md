@@ -1,5 +1,4 @@
 # 💌 Mobile Wedding Invitation 💌
-
 ![demo1.gif](demo1.gif)
 
 This project is a modern, responsive mobile wedding invitation web application built with React and TypeScript. The project provides a beautiful, interactive digital wedding invitation that can be easily customized and deployed.
@@ -26,7 +25,6 @@ Cute confetti effects are implemented using js-confetti to add celebratory anima
 - **Customizable Content**: JSON-based configuration for easy personalization
 
 ## 📋 Installation and Setup
-
 1. Clone the repository:
 ```bash
 git clone https://github.com/mhmdksh/our-wedding.git
@@ -58,7 +56,6 @@ npm run dev
 ```
 
 ## 🐳 Docker Deployment
-
 For production deployment with automatic HTTPS:
 
 ```bash
@@ -76,7 +73,6 @@ The Docker setup includes:
 - **Custom Domain**: Configure via `MY_URL` environment variable
 
 ## ✅ Customization Checklist
-
 - [ ] **`src/data.json`**: Update wedding information, couple details, venue, and event details
 - [ ] **`index.html`**: Modify favicon, title, and meta tags for SEO and social media sharing
 - [ ] **`public/thumbnail.jpg`**: Replace with your wedding thumbnail image
@@ -86,14 +82,12 @@ The Docker setup includes:
 - [ ] **(Optional)** **`src/data.json`**: Add payment account details using `kakaopayAccount` and `tossAccount` for Korean payment systems
 
 ## 🛠️ Development Commands
-
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run lint` - Run ESLint
 - `npm run preview` - Preview production build
 
 ## 🌐 Deployment Options
-
 ### Docker Deployment (Recommended)
 Complete containerized solution with automatic HTTPS and reverse proxy.
 
@@ -103,7 +97,6 @@ Compatible with platforms like Vercel, Netlify, or any static hosting service.
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmhmdksh%2Four-wedding)
 
 ## 🔧 Technology Stack
-
 - **Frontend**: React 18.2.0, TypeScript, Vite
 - **Styling**: Emotion (styled components)
 - **Maps**: Google Maps (@googlemaps/react-wrapper)
@@ -114,20 +107,16 @@ Compatible with platforms like Vercel, Netlify, or any static hosting service.
 - **Code Quality**: ESLint, Prettier, TypeScript strict mode
 
 ## 📚 Documentation
-
 For detailed development and configuration information, see [CLAUDE.md](CLAUDE.md).
 
 ## 🙏 Acknowledgments
-
 - Original developer: [heejin-hwang](https://github.com/heejin-hwang)
 - [react-photoswipe-gallery](https://www.npmjs.com/package/react-photoswipe-gallery) library
 - [Google Maps Platform](https://developers.google.com/maps)
 - [Firebase](https://firebase.google.com/) for backend services
 
 ## 📄 License
-
 This project is distributed under the MIT License. See the LICENSE file for more details.
 
 ## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=mhmdksh/our-wedding&type=Date)](https://star-history.com/#mhmdksh/our-wedding&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=heejin-hwang/mobile-wedding-invitation&type=Date)](https://star-history.com/#heejin-hwang/mobile-wedding-invitation&Date)
