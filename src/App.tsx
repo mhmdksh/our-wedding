@@ -48,7 +48,7 @@ function App() {
           <GalleryWrap />
         </Wrapper>
         <Wrapper>
-          <Heading1>Support Us</Heading1>
+          <Heading1>Gift Registry</Heading1>
           <Account />
         </Wrapper>
         <Wrapper>

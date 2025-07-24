@@ -10,8 +10,11 @@ const Location = () => {
   return (
     <LocationWrapper>
       <PointTitle>{mapInfo.address1}</PointTitle>
-      <Caption textAlign={'center'}>{mapInfo.address2}</Caption>
+      <br />
+      <Caption textAlign={'center'}>{mapInfo.address1}</Caption>
+      <br />
       <Map />
+      <br />
       <MapButtons />
       <Address />
     </LocationWrapper>

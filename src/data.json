@@ -1,7 +1,7 @@
 {
   "greeting": {
-    "title": "Mohamad & Aya 💍\nGetting Married!",
-    "message": "We are getting married.\n\nWe who have been warm with the right temperature for each other.\nWe invite you to share this exciting moment\nas we take our first step as a married couple.",
+    "title": "Mohamad & Aya 💍\n Are Getting Married!",
+    "message": "We are getting married.\nWe who have been warm with the right temperature for each other.\nWe invite you to share this exciting\n moment as we take our first step as a \nmarried couple.",
     "host": {
       "groom": {
         "name": "Mohamad",
@@ -26,6 +26,8 @@
     },
     "eventDetail": "October 18, 2025 (Saturday) 8:00 PM\nDar Al Amar Restaurant, Tripoli, Lebanon"
   },
+  "title": "Gift Registry",
+  "message": "Your love, laughter and\npresence are all we could\nwish for on our special day.\nFor those who wish, a\nwedding registry is available at.",
   "hostInfo": [
     {
       "host": "Groom's Side",
@@ -68,12 +70,6 @@
     "lon": 35.82802279313072,
     "zoom": 17
   },
-  "locationInfo": [
-    {
-      "title": "📍 Location",
-      "desc": "👉🏻 Dar Al Amar Restaurant, Tripoli, Lebanon"
-    }
-  ],
   "emojis": [
     "❤️",
     "💛",

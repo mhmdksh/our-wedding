@@ -15,8 +15,8 @@ const Invitation = () => {
     
     // Parse the date from eventDetail - "October 18, 2025 (Saturday) 6:00 PM"
     // Convert to Google Calendar format: YYYYMMDDTHHMMSS
-    const eventDate = "20251018T180000"; // October 18, 2025 6:00 PM
-    const endDate = "20251018T230000";   // End at 11:00 PM (5 hours later)
+    const eventDate = "20251018T200000"; // October 18, 2025 8:00 PM
+    const endDate = "20251018T230000";   // End at 11:00 PM (3 hours later)
     
     const params = new URLSearchParams({
       action: 'TEMPLATE',
