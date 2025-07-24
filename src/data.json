@@ -10,10 +10,6 @@
           {
             "relation": "father",
             "name": "Ghassan Shehab"
-          },
-          {
-            "relation": "mother",
-            "name": "Mona Al Kharrat"
           }
         ]
       },
@@ -24,51 +20,44 @@
           {
             "relation": "father",
             "name": "Amer Arab"
-          },
-          {
-            "relation": "mother",
-            "name": "Basima Al Halabi"
           }
         ]
       }
     },
-    "eventDetail": "October 18, 2025 (Saturday) 6:00 PM\nDar el Kamar Restaurant, Tripoli, Lebanon"
+    "eventDetail": "October 18, 2025 (Saturday) 8:00 PM\nDar Al Amar Restaurant, Tripoli, Lebanon"
   },
   "hostInfo": [
     {
       "host": "Groom's Side",
       "accountInfo": [
         {
-          "name": "Mohamad Khodor Shehab",
+          "name": "Mohamad",
           "relation": "groom",
-          "bank": "Emirates NBD Bank",
-          "account": "AE390260000215451420101",
-          "kakaopayAccount": "",
-          "tossAccount": ""
+          "bank": "Emirates NBD",
+          "account": "AE390260000215451420101"
         },
         {
-          "name": "Mohamad Khodor Shehab",
+          "name": "Mohamad",
           "relation": "groom",
           "bank": "WISH Money",
-          "account": "20915943-03"
+          "account": "96176678985"
         },
         {
-          "name": "Mohamad Khodor Shehab",
+          "name": "Mohamad",
           "relation": "groom",
           "bank": "Binance ID",
           "account": "35766990"
-        },
+        }
+      ]
+    },
+    {
+      "host": "Bride's Side",
+      "accountInfo": [
         {
-          "name": "Mohamad Khodor Shehab",
-          "relation": "groom",
-          "bank": "ERC-20",
-          "account": "0x7c996Fc3a62B4B0fb1675E251c3d865f146f062E"
-        },
-        {
-          "name": "Mohamad Khodor Shehab",
-          "relation": "groom",
-          "bank": "TRC-20",
-          "account": "TMua4bHmWriXGugPdqnRhdPNP6hXH13a9x"
+          "name": "Aya",
+          "relation": "bride",
+          "bank": "HSBC UAE",
+          "account": "AE360200000031068315001"
         }
       ]
     }
@@ -81,8 +70,8 @@
   },
   "locationInfo": [
     {
-      "title": "📍 Google Maps Link",
-      "desc": "👉🏻 https://maps.app.goo.gl/pb1XBB9RNKWFKYVb7"
+      "title": "📍 Location",
+      "desc": "👉🏻 Dar Al Amar Restaurant, Tripoli, Lebanon"
     }
   ],
   "emojis": [

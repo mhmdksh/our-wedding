@@ -88,6 +88,28 @@ src/
 - **Dynamic URL generation** for map services
 - **Cleaner JSON structure** without redundant Korean service URLs
 
+### ✅ **Mobile Responsiveness Enhancements**
+- **Fixed text overflow issues** on mobile devices preventing horizontal scrolling
+- **Responsive container sizing** with progressive border adjustments (8px → 12px → 20px → 30px)
+- **Improved text wrapping** with `word-wrap: break-word` and `overflow-wrap: break-word`
+- **Enhanced typography scaling** using `clamp()` for fluid font sizes across all screen sizes
+- **Mobile-optimized padding** for all text components and host information display
+- **Flex-wrap implementation** for host information to prevent name truncation
+- **Hyphenation support** for better text breaking on long words
+
+### ✅ **Image Management System**
+- **Comprehensive gallery system** with 12 configurable image slots
+- **Main hero image** easily replaceable via import in Main.tsx (currently uses 05.jpg)
+- **Structured image imports** in `/src/layout/Gallery/Images.ts` with customizable dimensions
+- **Thumbnail and favicon support** via `/public/` directory
+- **PhotoSwipe integration** for zoom and swipe gallery functionality
+- **Responsive image sizing** with automatic height adjustment
+
+### ✅ **Content Updates**
+- **Updated section heading** from "Send Your Wishes" to "Support Us" for better clarity
+- **Added first wedding photos** to the gallery system
+- **Enhanced user experience** with more intuitive navigation labels
+
 ## Configuration Guide
 
 ### **Location Setup**
@@ -108,6 +130,46 @@ All wedding information is configured in `src/data.json`:
 - **Event date, time, and venue**
 - **Payment account details**
 - **Transportation and parking information**
+
+### **Image Management**
+
+#### **Main Hero Image**
+The main wedding photo displayed at the top of the invitation:
+1. **Current:** Uses `05.jpg` from `/src/assets/images/`
+2. **To Change:** 
+   - Replace `/src/assets/images/05.jpg` with your main photo, OR
+   - Edit `/src/layout/Main/Main.tsx` to use a different image:
+   ```typescript
+   import mainImg from '@/assets/images/01.jpg'  // Change number
+   ```
+
+#### **Gallery Images**
+The photo gallery supports up to 12 images with zoom and swipe functionality:
+1. **Replace Existing:** Simply replace files in `/src/assets/images/` (01.jpg through 12.jpg)
+2. **Add New Images:** 
+   - Add photos to `/src/assets/images/`
+   - Update `/src/layout/Gallery/Images.ts`:
+   ```typescript
+   import yourPhoto from '@/assets/images/your-photo.jpg'
+   
+   const images = [
+     {
+       alt: 'Wedding Photo',
+       source: yourPhoto,
+       width: 800,    // Update with actual dimensions
+       height: 1200
+     }
+   ];
+   ```
+
+#### **Thumbnail & Favicon**
+- **Social Media Thumbnail:** Replace `/public/thumbnail.jpg` (recommended: 1200x630px)
+- **Browser Icon:** Replace `/public/favicon.png` (recommended: 32x32px or 64x64px)
+
+#### **Image Size Recommendations**
+- **Main Photo:** 400px wide (height auto-adjusts)
+- **Gallery Photos:** Various sizes supported, update dimensions in `Images.ts`
+- **Optimized formats:** JPG for photos, PNG for icons with transparency
 
 ### **Google Maps API (Optional)**
 1. Get API key from [Google Cloud Console](https://console.cloud.google.com/)
