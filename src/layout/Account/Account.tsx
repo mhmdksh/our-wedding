@@ -37,16 +37,16 @@ const HostInfoWrapper = styled.div`
   width: 100%;
   max-width: 600px;
   flex-direction: column;
-  padding: 10px;
+  padding: 5px;
   margin: 0 auto;
   
   @media screen and (max-width: 500px) {
     width: 98%;
-    padding: 8px;
+    padding: 3px;
   }
   
   @media screen and (max-width: 400px) {
     width: 96%;
-    padding: 5px;
+    padding: 2px;
   }
 `;
