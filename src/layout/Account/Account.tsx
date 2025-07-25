@@ -34,14 +34,19 @@ export default Account;
 
 const HostInfoWrapper = styled.div`
   display: flex;
-  width: 95%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 600px;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   margin: 0 auto;
   
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     width: 98%;
-    padding: 10px;
+    padding: 8px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    width: 96%;
+    padding: 5px;
   }
 `;

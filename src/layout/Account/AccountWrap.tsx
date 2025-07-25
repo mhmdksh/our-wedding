@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import Copy from '@/assets/icons/copy.svg?react';
 import kakaopay from '@/assets/icons/kakaopay.png?url';
 import toss from '@/assets/icons/toss.png?url';
+import { useMediaQuery } from 'react-responsive';
 
 interface IAccountProps {
   name: string;
@@ -19,13 +20,17 @@ const AccountWrap = ({
   kakaopayAccount,
   tossAccount,
 }: IAccountProps) => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1024 });
+  const isDesktop = useMediaQuery({ minWidth: 1025 });
+  
   const handleCopy = () => {
     navigator.clipboard.writeText(account).then(
       () => {
-        alert('Account number copied! 😉😉');
+        alert('Copied successfully!');
       },
       () => {
-        alert('Failed to copy account number. 🥲🥲');
+        alert('Failed to copy');
       },
     );
   };
@@ -39,10 +44,10 @@ const AccountWrap = ({
         <BankName>{bank}</BankName>
       </BankInfo>
       <Details>
-        <AccountInfo>
+        <AccountInfo $isMobile={isMobile} $isTablet={isTablet}>
           {account}
         </AccountInfo>
-        <CopyButton onClick={handleCopy}>
+        <CopyButton $isMobile={isMobile} onClick={handleCopy}>
           <Copy fill="#dfdfdf" />
         </CopyButton>
       </Details>
@@ -64,14 +69,14 @@ const AccountWrap = ({
 
 const Wrapper = styled.div`
   font-family: 'SUITE-Regular';
-  padding: 15px;
-  margin: 10px 0;
+  padding: 18px;
+  margin: 12px 0;
   border: 1px solid #dfdfdf;
   border-radius: 8px;
   background: #fafafa;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -82,9 +87,6 @@ const Info = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
-`;
-const Relation = styled.span`
-  color: #44484d;
 `;
 const Name = styled.span`
   font-size: 1.1rem;
@@ -104,37 +106,46 @@ const BankName = styled.span`
 `;
 
 const Details = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
   width: 100%;
+  min-height: 40px;
+  align-items: center;
 `;
 
-const AccountInfo = styled.div`
-  flex: 1;
+const AccountInfo = styled.div<{ $isMobile: boolean; $isTablet: boolean }>`
   word-wrap: break-word;
   overflow-wrap: break-word;
   font-family: monospace;
-  font-size: 0.9rem;
+  font-size: ${({ $isMobile, $isTablet }) => 
+    $isMobile ? '0.75rem' : $isTablet ? '0.85rem' : '0.9rem'
+  };
   color: #333;
   background: white;
-  padding: 8px;
+  padding: ${({ $isMobile, $isTablet }) => 
+    $isMobile ? '8px' : $isTablet ? '10px' : '12px'
+  };
   border: 1px solid #e0e0e0;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
-const CopyButton = styled.button`
+const CopyButton = styled.button<{ $isMobile: boolean }>`
   border: 1px solid #dfdfdf;
-  border-radius: 5px;
-  padding: 8px 12px;
+  border-radius: 4px;
+  padding: ${({ $isMobile }) => $isMobile ? '6px' : '10px'};
   cursor: pointer;
   outline: none;
   background: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 40px;
-  height: 36px;
+  width: ${({ $isMobile }) => $isMobile ? '32px' : '40px'};
+  height: ${({ $isMobile }) => $isMobile ? '32px' : '40px'};
   flex-shrink: 0;
   
   &:hover {
