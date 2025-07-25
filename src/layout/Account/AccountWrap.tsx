@@ -33,12 +33,14 @@ const AccountWrap = ({
   return (
     <Wrapper>
       <Info>
-        <Relation>{relation}</Relation>
         <Name>{name}</Name>
       </Info>
+      <BankInfo>
+        <BankName>{bank}</BankName>
+      </BankInfo>
       <Details>
         <AccountInfo>
-          {bank} {account}
+          {account}
         </AccountInfo>
         <CopyButton onClick={handleCopy}>
           <Copy fill="#dfdfdf" />
@@ -62,14 +64,17 @@ const AccountWrap = ({
 
 const Wrapper = styled.div`
   font-family: 'SUITE-Regular';
-  padding: 10px 0;
-  border-bottom: 1px solid #dfdfdf;
-  &:last-of-type {
-    margin-bottom: 0;
-    border-bottom: none;
-  }
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  background: #fafafa;
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 `;
 
 const Info = styled.div`
@@ -77,31 +82,64 @@ const Info = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
-  margin: 5px 0;
 `;
 const Relation = styled.span`
   color: #44484d;
 `;
 const Name = styled.span`
-  font-size: 1rem
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+`;
+
+const BankInfo = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const BankName = styled.span`
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
 `;
 
 const Details = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  width: 100%;
 `;
 
-const AccountInfo = styled.div``;
-const CopyButton = styled.button`
-  border: none;
-  border-radius: 5px;
-  padding: 0.1em 0.2em;
-  cursor: pointer;
-  gap: 2px;
-  outline: none;
-  box-shadow: none;
+const AccountInfo = styled.div`
+  flex: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #333;
   background: white;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+`;
+const CopyButton = styled.button`
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  outline: none;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 36px;
+  flex-shrink: 0;
+  
+  &:hover {
+    background: #f5f5f5;
+  }
 `;
 
 const AccountLinks = styled.div`
