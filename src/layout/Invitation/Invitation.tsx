@@ -3,6 +3,7 @@ import data from 'data.json';
 import Host from '../Contact/Host.tsx';
 import RoundButton from '@/components/RoundButton.tsx';
 import { Caption, Paragraph } from '@/components/Text.tsx';
+import WeddingCountdown from '@/components/Countdown.tsx';
 
 const Invitation = () => {
   const { greeting, mapInfo } = data;
@@ -35,6 +36,7 @@ const Invitation = () => {
       <Paragraph>{greeting.message}</Paragraph>
       <Host />
       <Caption textAlign={'center'}>{greeting.eventDetail}</Caption>
+      <WeddingCountdown />
       <RoundButton
         target="_blank"
         href={createGoogleCalendarUrl()}

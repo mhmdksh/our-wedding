@@ -1,11 +1,11 @@
 {
   "greeting": {
     "title": "Mohamad & Aya 💍\n Are Getting Married!",
-    "message": "We are getting married.\nWe who have been warm with the right temperature for each other.\nWe invite you to share this exciting\n moment as we take our first step as a \nmarried couple.",
+    "message": "We said yes to forever — and we’d love for you to say yes to celebrating with us!",
     "host": {
       "groom": {
         "name": "Mohamad",
-        "relation": "son",
+        "relation": "son\n",
         "parents": [
           {
             "relation": "father",
@@ -15,7 +15,7 @@
       },
       "bride": {
         "name": "Aya",
-        "relation": "daughter",
+        "relation": "daughter\n",
         "parents": [
           {
             "relation": "father",
